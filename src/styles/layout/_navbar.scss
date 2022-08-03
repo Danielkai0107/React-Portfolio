@@ -1,7 +1,7 @@
 .navbar {
   width: 90%;
   display: flex;
-  @include absolute-lt(50%, 6vh);
+  @include absolute-lt(50%, 5vh);
   transform: translateX(-50%);
   z-index: 10;
   padding-bottom: 0.8em;
@@ -29,6 +29,50 @@
     justify-content: space-around;
     a {
       @include font(1em, 1.5em, 100, 2px);
+      transition: all 0.4s;
+      &:hover {
+        opacity: 0.4;
+      }
+    }
+  }
+}
+
+.navbar--b {
+  width: 90%;
+  display: flex;
+  @include absolute-lt(50%, 5vh);
+  transform: translateX(-50%);
+  z-index: 10;
+  padding-bottom: 0.8em;
+  border-bottom: 1px solid #ccc;
+  &__circle {
+    flex: 1;
+    @include flex-around(center, row);
+    li {
+      @include size(0.9em, 0.9em);
+      border: 1px solid #ccc;
+      border-radius: 0.9em;
+      transition: all 0.4s;
+      cursor: pointer;
+      &:nth-child(2) {
+        margin: 0 0.5em;
+      }
+      &:hover {
+        background-color: #ccc;
+      }
+    }
+  }
+  &__list {
+    flex: 6;
+    display: flex;
+    justify-content: space-around;
+    a {
+      @include font(1em, 1.5em, 100, 2px);
+      color: #ccc;
+      transition: all 0.4s;
+      &:hover {
+        opacity: 0.4;
+      }
     }
   }
 }

@@ -1,15 +1,15 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { router } from '../lib/router';
-function Navbar() {
+function Navbar({ darkStyle }) {
   return (
-    <nav className="navbar">
-      <ul className="navbar__circle">
+    <nav className={darkStyle ? 'navbar--b' : 'navbar'}>
+      <ul className={darkStyle ? 'navbar--b__circle' : 'navbar__circle'}>
         <li></li>
         <li></li>
         <li></li>
       </ul>
-      <ul className="navbar__list">
+      <ul className={darkStyle ? 'navbar--b__list' : 'navbar__list'}>
         {router.map(({ link, name }) => (
           <li key={name}>
             <Link to={link}>{name}</Link>

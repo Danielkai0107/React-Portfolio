@@ -1,4 +1,5 @@
 import React from 'react';
+import Navbar from '../components/Navbar';
 import ProjectItem from '../components/ProjectItem';
 import { items } from '../lib/items';
 
@@ -9,18 +10,21 @@ function ProjectPage() {
   }
 
   return (
-    <figure className="theme-bgc">
-      <section className="theme-bgc__border">
-        <main className="project container">
-          {items.map((item) => (
-            <ProjectItem item={item} key={item.number} />
-          ))}
-          <span className="backToTop" onClick={handleToTop}>
-            Back To Top
-          </span>
-        </main>
-      </section>
-    </figure>
+    <>
+      <Navbar />
+      <figure className="theme-bgc">
+        <section className="theme-bgc__border">
+          <main className="project container">
+            {items.map((item) => (
+              <ProjectItem item={item} key={item.number} />
+            ))}
+            <span className="backToTop" onClick={handleToTop}>
+              Back To Top
+            </span>
+          </main>
+        </section>
+      </figure>
+    </>
   );
 }
 

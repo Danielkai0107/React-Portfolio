@@ -3,8 +3,8 @@ body {
 }
 
 .container {
-  @include size(95%, 70vh);
-  @include absolute-lt(50%, 18vh);
+  @include size(95%, 75vh);
+  @include absolute-lt(50%, 15vh);
   transform: translateX(-50%);
 }
 
@@ -16,6 +16,18 @@ body {
     @include size(95%, 95vh);
     margin: auto;
     border: 1px solid #777;
+    border-radius: 1em;
+  }
+}
+
+.theme-bgc--b {
+  @include size(100%, 100vh);
+  background-image: url('../../../public/images/aboutIMG/black-bgc.jpg');
+  display: flex;
+  &__border {
+    @include size(95%, 95vh);
+    margin: auto;
+    border: 1px solid #ccc;
     border-radius: 1em;
   }
 }

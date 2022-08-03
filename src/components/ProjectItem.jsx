@@ -14,7 +14,7 @@ function ProjectItem({ item }) {
         </li>
         <li className="left__github">
           <a href={item.github} target="_blank" rel="noreferrer">
-            Github Code
+            Github Code <span>↗</span>
           </a>
         </li>
       </ul>
