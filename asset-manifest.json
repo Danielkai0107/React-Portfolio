@@ -1,17 +1,22 @@
 {
   "files": {
-    "main.css": "/React-Portfolio/static/css/main.49adb1c2.css",
-    "main.js": "/React-Portfolio/static/js/main.1eca8b52.js",
+    "main.css": "/React-Portfolio/static/css/main.21bd0e31.css",
+    "main.js": "/React-Portfolio/static/js/main.d688d0a5.js",
     "static/media/white-bgc.jpeg": "/React-Portfolio/static/media/white-bgc.a25ea0494a599dae156b.jpeg",
-    "static/media/title.png": "/React-Portfolio/static/media/title.be493146e2dfbcb6a765.png",
+    "static/media/black-bgc.jpg": "/React-Portfolio/static/media/black-bgc.e408465570d80acd6adf.jpg",
+    "static/media/info.png": "/React-Portfolio/static/media/info.96ecee67d04094a276d0.png",
+    "static/media/job.png": "/React-Portfolio/static/media/job.3e134549676fbfce3ced.png",
+    "static/media/title.png": "/React-Portfolio/static/media/title.c6729e756df780fd8ad9.png",
+    "static/media/mail.png": "/React-Portfolio/static/media/mail.667011f22038eaeaa8d3.png",
+    "static/media/list.png": "/React-Portfolio/static/media/list.6422c6f7aaae1afe8700.png",
     "static/media/circle.png": "/React-Portfolio/static/media/circle.117d65e68a8db7b0006c.png",
     "static/media/click.png": "/React-Portfolio/static/media/click.e5e551b41e471b05538d.png",
     "index.html": "/React-Portfolio/index.html",
-    "main.49adb1c2.css.map": "/React-Portfolio/static/css/main.49adb1c2.css.map",
-    "main.1eca8b52.js.map": "/React-Portfolio/static/js/main.1eca8b52.js.map"
+    "main.21bd0e31.css.map": "/React-Portfolio/static/css/main.21bd0e31.css.map",
+    "main.d688d0a5.js.map": "/React-Portfolio/static/js/main.d688d0a5.js.map"
   },
   "entrypoints": [
-    "static/css/main.49adb1c2.css",
-    "static/js/main.1eca8b52.js"
+    "static/css/main.21bd0e31.css",
+    "static/js/main.d688d0a5.js"
   ]
 }
