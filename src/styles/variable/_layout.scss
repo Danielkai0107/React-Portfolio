@@ -1,0 +1,27 @@
+body {
+  font-family: 'Noto Sans TC', sans-serif;
+}
+
+.container {
+  @include size(95%, 70vh);
+  @include absolute-lt(50%, 18vh);
+  transform: translateX(-50%);
+}
+
+.theme-bgc {
+  @include size(100%, 100vh);
+  background-image: url('../../../public/images/projectIMG/white-bgc.jpeg');
+  display: flex;
+  &__border {
+    @include size(95%, 95vh);
+    margin: auto;
+    border: 1px solid #777;
+    border-radius: 1em;
+  }
+}
+
+@keyframes round {
+  to {
+    transform: rotate(360deg);
+  }
+}

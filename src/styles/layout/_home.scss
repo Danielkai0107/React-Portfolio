@@ -1,0 +1,18 @@
+.home {
+  &__title {
+    @include size(80%, 100%);
+    margin-left: 3%;
+    background-image: url('../../../public/images/projectIMG/title.png');
+    @include bg-contain;
+    background-position: left top;
+  }
+  &__circle {
+    width: 18%;
+    aspect-ratio: 1;
+    opacity: 0.2;
+    @include absolute-rb(3%, 0%);
+    background-image: url('../../../public/images/projectIMG/circle.png');
+    @include bg-contain;
+    animation: round 20s forwards infinite linear;
+  }
+}
