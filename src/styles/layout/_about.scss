@@ -19,7 +19,7 @@
     }
   }
   &__title {
-    width: 60%;
+    width: 50%;
     aspect-ratio: 2;
     background-image: url('../../../public/images/aboutIMG/title.png');
     @include bg-contain;
@@ -27,13 +27,13 @@
   &__info {
     width: 60%;
     margin: 0 auto;
-    margin-top: 4em;
+    margin-top: 5em;
     aspect-ratio: 16/9;
     background-image: url('../../../public/images/aboutIMG/info.png');
     @include bg-contain;
   }
   &__skill {
-    width: 80%;
+    width: 60%;
     margin: 3em auto;
     &__title {
       width: 20%;
@@ -50,7 +50,7 @@
     }
   }
   &__ex {
-    width: 80%;
+    width: 60%;
     margin: 3em auto;
     &__title {
       width: 42%;
@@ -59,7 +59,7 @@
       @include bg-contain;
     }
     &__info {
-      width: 50%;
+      width: 65%;
       margin: 2em auto;
       aspect-ratio: 3/4;
       background-image: url('../../../public/images/aboutIMG/job.png');

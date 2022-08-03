@@ -9,12 +9,9 @@ function HomePage() {
       <figure className="theme-bgc">
         <section className="theme-bgc__border">
           <main className="home container">
-            <figure className="home__title">
+            <section className="home__title">
               <Link to={'/React-Portfolio/Project'}></Link>
-            </figure>
-            <section className="home__circle">
-              <figure></figure>
-              <Link to={'/React-Portfolio/Project'}></Link>
+              <figure className="home__circle"></figure>
             </section>
           </main>
         </section>

@@ -3,7 +3,7 @@ import React from 'react';
 function ProjectItem({ item }) {
   return (
     <section className="project__item">
-      <ul className="left">
+      <ul className="left" data-aos="fade-right">
         <li className="left__number">
           <p>Project</p>
           <h1>{item.number}</h1>
@@ -14,11 +14,11 @@ function ProjectItem({ item }) {
         </li>
         <li className="left__github">
           <a href={item.github} target="_blank" rel="noreferrer">
-            Github Code <span>↗</span>
+            Github
           </a>
         </li>
       </ul>
-      <ul className="right">
+      <ul className="right" data-aos="fade-left">
         <li className="right__img">
           <div className="mask"></div>
           <a href={item.website} target="_blank" rel="noreferrer">
