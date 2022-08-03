@@ -1,5 +1,5 @@
 export const router = [
-  { link: '/', name: 'Home' },
-  { link: '/Project', name: 'Project' },
-  { link: '/About', name: 'About' },
+  { link: '/React-Portfolio/', name: 'Home' },
+  { link: '/React-Portfolio/Project', name: 'Project' },
+  { link: '/React-Portfolio/About', name: 'About' },
 ];
