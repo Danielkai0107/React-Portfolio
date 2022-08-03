@@ -3,7 +3,7 @@ import React from 'react';
 function ProjectItem({ item }) {
   return (
     <section className="project__item">
-      <ul className="left" data-aos="fade-right">
+      <ul className="left">
         <li className="left__number">
           <p>Project</p>
           <h1>{item.number}</h1>
@@ -18,7 +18,7 @@ function ProjectItem({ item }) {
           </a>
         </li>
       </ul>
-      <ul className="right" data-aos="fade-left">
+      <ul className="right">
         <li className="right__img">
           <div className="mask"></div>
           <a href={item.website} target="_blank" rel="noreferrer">
