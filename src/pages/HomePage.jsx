@@ -14,7 +14,6 @@ function HomePage() {
             </figure>
             <section className="home__circle">
               <figure></figure>
-              <span>click</span>
               <Link to={'/React-Portfolio/Project'}></Link>
             </section>
           </main>

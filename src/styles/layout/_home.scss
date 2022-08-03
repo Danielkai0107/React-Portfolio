@@ -14,11 +14,6 @@
     @include absolute-rb(3%, 0%);
     width: 18%;
     aspect-ratio: 1;
-    span {
-      @include absolute-center;
-      @include font(2.3em, 2em, 100, 2px);
-      opacity: 0.2;
-    }
     a {
       @include absolute-center;
       @include size(100%, 100%);
