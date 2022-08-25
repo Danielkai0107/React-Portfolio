@@ -24,10 +24,24 @@
     background-image: url('../../../public/images/aboutIMG/title.png');
     @include bg-contain;
   }
+  &__photo {
+    @include size(6rem, 6rem);
+    border-radius: 6rem;
+    margin: 3rem 0 0 24%;
+    overflow: hidden;
+    img {
+      width: 100%;
+      @include absolute-lt(50%, 0%);
+      translate: -50% -8%;
+      opacity: 0.8;
+      filter: grayscale(30%);
+    }
+    @include hover-scale(1.1, 0.4s);
+  }
   &__info {
     width: 60%;
     margin: 0 auto;
-    margin-top: 5em;
+    margin-top: 2.5em;
     aspect-ratio: 16/9;
     background-image: url('../../../public/images/aboutIMG/info.png');
     @include bg-contain;

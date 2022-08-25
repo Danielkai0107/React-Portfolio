@@ -14,6 +14,9 @@ function AboutPage() {
         <section className="theme-bgc--b__border">
           <main className="about container">
             <figure className="about__title"></figure>
+            <figure className="about__photo">
+              <img src="./images/aboutIMG/IMG_2144.jpg" alt="" />
+            </figure>
             <figure className="about__info"></figure>
             <section className="about__skill">
               <figure className="about__skill__title"></figure>

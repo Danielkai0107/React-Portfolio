@@ -9,18 +9,16 @@
   @content;
 }
 
-@mixin img-w($width, $fit) {
-  img {
-    width: $width;
-    object-fit: $fit;
-    vertical-align: bottom;
-    @content;
-  }
+@mixin bg-cover {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  @content;
 }
 
-@mixin img-h($heigh, $fit) {
+@mixin img-w($weigh, $fit) {
   img {
-    width: $heigh;
+    width: $weigh;
     object-fit: $fit;
     vertical-align: bottom;
     @content;
