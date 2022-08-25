@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/React-Portfolio/static/css/main.acf05e6b.css",
-    "main.js": "/React-Portfolio/static/js/main.0a846e80.js",
+    "main.css": "/React-Portfolio/static/css/main.03c1aba7.css",
+    "main.js": "/React-Portfolio/static/js/main.3339497b.js",
     "static/media/white-bgc.jpeg": "/React-Portfolio/static/media/white-bgc.a25ea0494a599dae156b.jpeg",
     "static/media/black-bgc.jpg": "/React-Portfolio/static/media/black-bgc.e408465570d80acd6adf.jpg",
     "static/media/info.png": "/React-Portfolio/static/media/info.96ecee67d04094a276d0.png",
@@ -12,11 +12,11 @@
     "static/media/circle.png": "/React-Portfolio/static/media/circle.117d65e68a8db7b0006c.png",
     "static/media/click.png": "/React-Portfolio/static/media/click.e5e551b41e471b05538d.png",
     "index.html": "/React-Portfolio/index.html",
-    "main.acf05e6b.css.map": "/React-Portfolio/static/css/main.acf05e6b.css.map",
-    "main.0a846e80.js.map": "/React-Portfolio/static/js/main.0a846e80.js.map"
+    "main.03c1aba7.css.map": "/React-Portfolio/static/css/main.03c1aba7.css.map",
+    "main.3339497b.js.map": "/React-Portfolio/static/js/main.3339497b.js.map"
   },
   "entrypoints": [
-    "static/css/main.acf05e6b.css",
-    "static/js/main.0a846e80.js"
+    "static/css/main.03c1aba7.css",
+    "static/js/main.3339497b.js"
   ]
 }
