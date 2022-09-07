@@ -38,7 +38,7 @@ export const items = [
     number: '06',
     title: '/React-Portfolio/images/projectIMG/movie.png',
     img: '/React-Portfolio/images/projectIMG/movie-img.png',
-    website: 'https://danielkai0107.github.io/react-test/',
-    github: 'https://github.com/Danielkai0107/react-test',
+    website: 'https://danielkai0107.github.io/movie-final/',
+    github: 'https://github.com/Danielkai0107/movie-final',
   },
 ];
