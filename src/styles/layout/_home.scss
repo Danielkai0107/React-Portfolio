@@ -1,5 +1,5 @@
 .home {
-  animation: pageFadeIn 2s forwards;
+  animation: pageFadeIn 3s forwards;
   overflow: hidden;
   &__circle {
     @include absolute-rt(0%, 0%);
@@ -12,18 +12,6 @@
     @extend %bg-contain;
     opacity: 0.2;
     animation: run1 10s infinite;
-  }
-  &__circle2 {
-    @include absolute-lb(0%, 0%);
-    @include size(5rem, 5rem);
-    //RWD-sm
-    @include sm {
-      @include size(7rem, 7rem);
-    }
-    background-image: url('../../../public/images/projectIMG/click.png');
-    @extend %bg-contain;
-    opacity: 0.2;
-    animation: run2 15s infinite;
   }
   &__title {
     h1 {

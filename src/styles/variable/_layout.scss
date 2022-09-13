@@ -16,7 +16,7 @@ body {
 
 .theme-bgc {
   @include size(100%, 100vh);
-  background-image: url('../../../public/images/projectIMG/white-bgc.jpeg');
+  background-image: url('../../../public/white-bgc.jpeg');
   display: flex;
   &__border {
     @include size(95%, 95vh);
@@ -28,48 +28,12 @@ body {
 
 .theme-bgc--b {
   @include size(100%, 100vh);
-  background-image: url('../../../public/images/aboutIMG/black-bgc.jpg');
+  background-image: url('../../../public/black-bgc.jpg');
   display: flex;
   &__border {
     @include size(95%, 95vh);
     margin: auto;
     border: 1px solid #ccc;
     border-radius: 1em;
-  }
-}
-
-@keyframes round {
-  to {
-    transform: rotate(360deg);
-  }
-}
-
-@keyframes breathe {
-  0% {
-    transform: scale(1);
-  }
-  50% {
-    transform: scale(1.05);
-  }
-  100% {
-    transform: scale(1);
-  }
-}
-
-@keyframes open {
-  from {
-    translate: 100%;
-  }
-  to {
-    translate: 0%;
-  }
-}
-
-@keyframes pageFadeIn {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
   }
 }

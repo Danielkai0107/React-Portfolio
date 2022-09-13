@@ -24,16 +24,17 @@
   &__title {
     @include font(1.5rem, 1.5rem, 100, 2px);
     padding-bottom: 1rem;
-    border-bottom: 1px solid #ccc;
+    border-bottom: 1px solid #888;
   }
   &__link {
-    padding: 1rem 0;
+    display: flex;
     &:not(:first-of-type) {
       margin-top: 2rem;
     }
     a {
+      @include size(100%, 3rem);
       font-family: 'Aboreto', cursive;
-      @include font(1.5rem, 1.5rem, 200, 2px);
+      @include font(1.5rem, 3rem, 200, 2px);
     }
   }
 }
