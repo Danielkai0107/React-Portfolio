@@ -1,77 +1,122 @@
 .navbar {
-  width: 90%;
-  display: flex;
-  @include absolute-lt(50%, 5vh);
-  transform: translateX(-50%);
-  z-index: 10;
-  padding-bottom: 0.8em;
+  width: 85%;
+  //RWD-sm
+  @include sm {
+    width: 90%;
+  }
+  @extend %flex-horizontal;
+  justify-content: space-between;
+  @include absolute-lt(50%, 2.5vh);
+  translate: -50% 0;
+  z-index: 40;
+  padding: 0.8rem 0.5rem;
   border-bottom: 1px solid #777;
   &__circle {
-    flex: 1;
-    @include flex-around(center, row);
+    width: 20%;
+    //RWD-sm
+    @include sm {
+      width: 15%;
+    }
+    @extend %flex-horizontal;
+    justify-content: space-around;
     li {
-      @include size(0.9em, 0.9em);
+      @include size(0.6em, 0.6em);
       border: 1px solid #777;
       border-radius: 0.9em;
       transition: all 0.4s;
-      &:nth-child(2) {
-        margin: 0 0.5em;
-      }
       &:hover {
-        background-color: #777;
+        background-color: #ccc;
+      }
+      &:not(:first-of-type) {
+        margin-left: 1rem;
       }
     }
   }
   &__list {
-    flex: 6;
-    display: flex;
-    justify-content: space-around;
+    width: 75%;
+    display: none;
+    //RWD-sm
+    @include sm {
+      display: flex;
+      justify-content: space-between;
+    }
     a {
-      @include font(1em, 1.5em, 100, 2px);
+      @include font(1.1em, 1.5em, 100, 2px);
       transition: all 0.4s;
       &:hover {
         opacity: 0.4;
       }
     }
+  }
+  &__burger {
+    @include sm {
+      display: none;
+    }
+    @include size(1.8rem, 1.8rem);
+    background-image: url('../../../public/images/projectIMG/burger.png');
+    @extend %bg-contain;
+    cursor: pointer;
   }
 }
 
 .navbar--b {
-  width: 90%;
-  display: flex;
-  @include absolute-lt(50%, 5vh);
-  transform: translateX(-50%);
-  z-index: 10;
-  padding-bottom: 0.8em;
+  width: 85%;
+  //RWD-sm
+  @include sm {
+    width: 90%;
+  }
+  @extend %flex-horizontal;
+  justify-content: space-between;
+  @include absolute-lt(50%, 2.5vh);
+  translate: -50% 0;
+  z-index: 40;
+  padding: 0.8rem 0.5rem;
   border-bottom: 1px solid #ccc;
   &__circle {
-    flex: 1;
-    @include flex-around(center, row);
+    width: 20%;
+    //RWD-sm
+    @include sm {
+      width: 15%;
+    }
+    @extend %flex-horizontal;
+    justify-content: space-around;
     li {
-      @include size(0.9em, 0.9em);
+      @include size(0.6em, 0.6em);
       border: 1px solid #ccc;
       border-radius: 0.9em;
       transition: all 0.4s;
-      cursor: pointer;
-      &:nth-child(2) {
-        margin: 0 0.5em;
-      }
       &:hover {
         background-color: #ccc;
+      }
+      &:not(:first-of-type) {
+        margin-left: 1rem;
       }
     }
   }
   &__list {
-    flex: 6;
-    display: flex;
-    justify-content: space-around;
+    width: 75%;
+    display: none;
+    //RWD-sm
+    @include sm {
+      display: flex;
+      justify-content: space-between;
+    }
     a {
-      @include font(1em, 1.5em, 100, 2px);
-      color: #ccc;
+      @include font(1.1em, 1.5em, 100, 2px);
       transition: all 0.4s;
+      color: #ccc;
       &:hover {
         opacity: 0.4;
       }
     }
+  }
+  &__burger {
+    @include sm {
+      display: none;
+    }
+    @include size(1.8rem, 1.8rem);
+    background-image: url('../../../public/images/aboutIMG/burger-white.png');
+    @extend %bg-contain;
+    cursor: pointer;
   }
 }

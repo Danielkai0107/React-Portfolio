@@ -1,24 +1,8 @@
-@import 'position';
-@import 'flexbox';
-
 //background 設定
-@mixin bg-contain {
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: contain;
-  @content;
-}
 
-@mixin bg-cover {
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: contain;
-  @content;
-}
-
-@mixin img-w($weigh, $fit) {
+@mixin img-w($width, $fit) {
   img {
-    width: $weigh;
+    width: $width;
     object-fit: $fit;
     vertical-align: bottom;
     @content;
@@ -27,8 +11,10 @@
 
 @mixin img-h($heigh, $fit) {
   img {
-    width: $heigh;
+    height: $heigh;
     object-fit: $fit;
+    vertical-align: bottom;
+    @content;
   }
 }
 
@@ -58,7 +44,6 @@
 @mixin size($width, $height) {
   width: $width;
   height: $height;
-  @content;
 }
 
 //文字

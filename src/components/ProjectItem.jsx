@@ -4,17 +4,22 @@ function ProjectItem({ item }) {
   return (
     <section className="project__item">
       <ul className="left">
-        <li className="left__number">
-          <p>Project</p>
-          <h1>{item.number}</h1>
+        <li className="left__title">
+          <h1>Project</h1>
+          <p>{item.number}</p>
         </li>
-        <li className="left__circle">
-          <figure className="text"></figure>
-          <figure className="circle"></figure>
-        </li>
-        <li className="left__github">
-          <a href={item.github} target="_blank" rel="noreferrer">
-            Github
+        <li className="left__decoration">
+          <figure className="circle">
+            <span>click photo</span>
+          </figure>
+          <a
+            className="github"
+            href={item.github}
+            target="_blank"
+            rel="noreferrer"
+          >
+            <span></span>
+            <p>Github</p>
           </a>
         </li>
       </ul>
@@ -26,7 +31,8 @@ function ProjectItem({ item }) {
           </a>
         </li>
         <li className="right__title">
-          <img src={item.title} alt="" />
+          <h1>SIDE PROJECT</h1>
+          <h2>{item.title}</h2>
         </li>
       </ul>
     </section>

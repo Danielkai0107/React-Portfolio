@@ -1,21 +1,58 @@
 import React from 'react';
+import { useContext } from 'react';
 import { Link } from 'react-router-dom';
-import { router } from '../lib/router';
-function Navbar({ darkStyle }) {
+import { PortfolioContext } from '../func/context';
+
+function Navbar() {
+  const { dark, setDark, setMenuOpen } = useContext(PortfolioContext);
+  function handleDarkModeClick(mode) {
+    setDark(mode);
+  }
   return (
-    <nav className={darkStyle ? 'navbar--b' : 'navbar'}>
-      <ul className={darkStyle ? 'navbar--b__circle' : 'navbar__circle'}>
+    <nav className={dark ? 'navbar--b' : 'navbar'}>
+      <ul className={dark ? 'navbar--b__circle' : 'navbar__circle'}>
         <li></li>
         <li></li>
         <li></li>
       </ul>
-      <ul className={darkStyle ? 'navbar--b__list' : 'navbar__list'}>
-        {router.map(({ link, name }) => (
-          <li key={name}>
-            <Link to={link}>{name}</Link>
-          </li>
-        ))}
+      <ul className={dark ? 'navbar--b__list' : 'navbar__list'}>
+        <li>
+          <Link
+            to="/"
+            onClick={() => {
+              handleDarkModeClick(false);
+            }}
+          >
+            Home
+          </Link>
+        </li>
+        <li>
+          <Link
+            to="/Project"
+            onClick={() => {
+              handleDarkModeClick(false);
+            }}
+          >
+            Project
+          </Link>
+        </li>
+        <li>
+          <Link
+            to="/About"
+            onClick={() => {
+              handleDarkModeClick(true);
+            }}
+          >
+            About
+          </Link>
+        </li>
       </ul>
+      <span
+        className={dark ? 'navbar--b__burger' : 'navbar__burger'}
+        onClick={() => {
+          setMenuOpen(true);
+        }}
+      ></span>
     </nav>
   );
 }

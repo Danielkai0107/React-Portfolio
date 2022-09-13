@@ -1,5 +1,4 @@
 import React from 'react';
-import Navbar from '../components/Navbar';
 import ProjectItem from '../components/ProjectItem';
 import { items } from '../lib/items';
 
@@ -11,7 +10,6 @@ function ProjectPage() {
 
   return (
     <>
-      <Navbar />
       <figure className="theme-bgc">
         <section className="theme-bgc__border">
           <main className="project container">

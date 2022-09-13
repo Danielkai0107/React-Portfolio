@@ -6,7 +6,7 @@
   .backToTop {
     width: 100%;
     color: #666;
-    padding: 2em 0;
+    padding: 1em 0;
     display: block;
     text-align: center;
     @include font(1.3em, 1.5em, 100, 2px);
@@ -17,83 +17,128 @@
   }
   &__item {
     margin: 0 auto;
-    width: 70%;
-    padding: 3em 0;
+    width: 80%;
+    padding: 2.5em 0;
     border-bottom: 1px solid #ccc;
-    @include flex-between(center, row);
-
+    @extend %flex-horizontal;
+    justify-content: space-between;
+    flex-wrap: wrap;
     .left {
-      width: 25%;
-      height: 100%;
+      width: 100%;
+      display: flex;
+      //RWD-sm
+      @include sm {
+        flex-direction: column;
+      }
+      //RWD-sm
+      @include sm {
+        width: 25%;
+        height: 100%;
+      }
+      margin-bottom: 1.5rem;
       li {
         width: 100%;
-        aspect-ratio: 7/4.2;
-      }
-      &__number {
-        p {
-          margin-left: 0.4em;
-          @include font(1.1em, 1em, 100, 2px);
+        //RWD-sm
+        @include sm {
+          &:not(:first-of-type) {
+            margin-top: 2.5rem;
+          }
         }
+      }
+      &__title {
+        @extend %flex-horizontal;
         h1 {
           font-family: 'Cormorant', serif;
-          @include font(6em, 1em, 100, 2px);
-          opacity: 0.7;
+          @include font(1.5em, 1.8em, 100, 2px);
+          color: #333;
+        }
+        p {
+          font-family: 'Aboreto', cursive;
+          @include font(1.7em, 1.5em, 100, 3px);
+          color: #333;
+          margin-left: 0.3em;
+        }
+        //RWD-sm
+        @include sm {
+          h1 {
+            @include font(1.8em, 2em, 100, 2px);
+          }
         }
       }
-      &__circle {
+      &__decoration {
         display: flex;
-        .text {
-          width: 50%;
-          @include absolute-lt(10%, 50%);
-          transform: translateY(-50%);
-          aspect-ratio: 30/7;
-          opacity: 0.5;
-          background-image: url('../../../public/images/projectIMG/clickphoto.png');
-          @include bg-contain;
+        align-items: center;
+        justify-content: flex-end;
+        //RWD-sm
+        @include sm {
+          justify-content: flex-start;
+          align-items: flex-start;
+          flex-direction: column;
         }
         .circle {
-          width: 35%;
-          aspect-ratio: 1;
-          opacity: 0.2;
-          background-image: url('../../../public/images/projectIMG/click.png');
-          @include bg-contain;
-          animation: round 20s forwards infinite linear;
+          display: none;
+          //RWD-sm
+          @include sm {
+            display: flex;
+          }
+          @include size(100%, 4rem);
+          @include after('', 4em, 4em) {
+            @include absolute-lt(4rem, 2px);
+            opacity: 0.2;
+            background-image: url('../../../public/images/projectIMG/click.png');
+            @extend %bg-contain;
+            animation: round 20s forwards infinite linear;
+          }
+          span {
+            align-self: center;
+            @include font(1.2rem, 1.5rem, 100, 1px);
+            color: #333;
+            opacity: 0.5;
+          }
         }
-      }
-      &__github {
-        display: flex;
-        align-items: flex-end;
-        a {
-          margin-left: 0.5em;
-          color: #666;
-          @include font(1.3em, 1.5em, 100, 2px);
+        .github {
+          @extend %flex-horizontal;
           transition: all 0.4s;
-          &::after {
-            content: '↗';
-            @include absolute-rt(-40%, 5%);
-            color: #666;
-            font-size: 16px;
-            transition: all 0.4s;
-            opacity: 1;
+          //RWD-sm
+          @include sm {
+            margin-top: 2.5rem;
+          }
+          p {
+            display: none;
+            //RWD-sm
+            @include sm {
+              display: block;
+            }
+            color: #333;
+            @include font(1em, 1.1em, 100, 2px);
+          }
+          span {
+            @include size(1.2rem, 1.2rem);
+            background-image: url('../../../public/images/projectIMG/github-logo.png');
+            @extend %bg-contain;
+            opacity: 0.6;
+            margin-right: 0.5rem;
           }
           &:hover {
             transform: scale(1.2);
-            &::after {
-              opacity: 0;
-            }
           }
         }
       }
     }
     .right {
-      width: 55%;
-      @include flex-center(center, column);
+      width: 100%;
+      //RWD-sm
+      @include sm {
+        width: 60%;
+        height: 100%;
+      }
       li {
         width: 100%;
         overflow: hidden;
       }
       &__img {
         box-shadow: 1px 1px 5px rgb(80, 80, 80);
+        margin-bottom: 1rem;
         .mask {
           @include absolute-lt(0, 0);
           @include size(100%, 100%);
@@ -106,7 +151,7 @@
         a {
           width: 100%;
           display: block;
-          @include bg-contain;
+          @extend %bg-contain;
           aspect-ratio: 16/9;
           @include img-w(100%, contain) {
             transition: all 1s;
@@ -122,10 +167,27 @@
         }
       }
       &__title {
-        margin-top: 1em;
-        aspect-ratio: 30/7;
-        opacity: 0.8;
-        @include img-w(100%, contain);
+        text-align: end;
+        font-family: 'Roboto Slab', serif;
+        white-space: nowrap;
+        h1 {
+          font-family: 'Aboreto', cursive;
+          @include font(2rem, 3rem, 100, 2px);
+          color: #555;
+        }
+        h2 {
+          @include font(1.5rem, 2.2rem, 100, 2px);
+          color: #333;
+        }
+        //RWD-md
+        @include md {
+          h1 {
+            @include font(3rem, 3.8rem, 100, 2px);
+          }
+          h2 {
+            @include font(2.4rem, 2.8rem, 100, 1px);
+          }
+        }
       }
     }
   }

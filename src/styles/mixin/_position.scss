@@ -1,12 +1,3 @@
-// 置中
-@mixin absolute-center {
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
-  @content;
-}
-
 // 左上
 @mixin absolute-lt($left, $top) {
   position: absolute;
