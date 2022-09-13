@@ -64,3 +64,12 @@ body {
     translate: 0%;
   }
 }
+
+@keyframes pageFadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}

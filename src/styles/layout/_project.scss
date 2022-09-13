@@ -1,5 +1,6 @@
 .project {
   overflow: auto;
+  animation: pageFadeIn 2s forwards;
   &::-webkit-scrollbar {
     width: 0;
   }

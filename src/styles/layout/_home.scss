@@ -1,4 +1,5 @@
 .home {
+  animation: pageFadeIn 2s forwards;
   overflow: hidden;
   &__circle {
     @include absolute-rt(0%, 0%);

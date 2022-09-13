@@ -1,4 +1,5 @@
 .about {
+  animation: pageFadeIn 2s forwards;
   overflow: auto;
   &::-webkit-scrollbar {
     width: 0;
