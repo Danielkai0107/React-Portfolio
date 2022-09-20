@@ -36,10 +36,10 @@ export const items = [
   },
   {
     number: '06',
-    title: 'WEATHER CLOCK',
+    title: 'WEATHER FORECAST',
     img: '/React-Portfolio/images/projectIMG/weather-img.png',
-    website: 'https://danielkai0107.github.io/Project-weatherAPI/',
-    github: 'https://github.com/Danielkai0107/Project-weatherAPI',
+    website: 'https://danielkai0107.github.io/Weather/',
+    github: 'https://github.com/Danielkai0107/Weather',
   },
   {
     number: '07',
