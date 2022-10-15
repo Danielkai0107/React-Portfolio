@@ -1,65 +1,17 @@
 .home {
   animation: pageFadeIn 3s forwards;
   overflow: hidden;
-  &__circle {
-    @include absolute-rt(0%, 0%);
-    @include size(5rem, 5rem);
-    //RWD-sm
-    @include sm {
-      @include size(7rem, 7rem);
-    }
-    background-image: url('../../../public/images/projectIMG/click.png');
-    @extend %bg-contain;
-    opacity: 0.2;
-    animation: run1 10s infinite;
-  }
   &__title {
     h1 {
-      color: #333;
+      color: #555;
       z-index: 30;
       font-family: 'Roboto Slab', serif;
-      @include font(3rem, 4rem, 100, 2px);
+      @include font(15vw, 17vw, 100, 2px);
       //RWD-sm
       @include sm {
-        @include font(5.5rem, 6rem, 100, 2px);
+        @include font(15vh, 17vh, 100, 4px);
       }
     }
-    animation: breathe 10s infinite;
-  }
-}
-
-@keyframes run1 {
-  0% {
-    top: 0;
-    translate: 0;
-    rotate: 0deg;
-  }
-  50% {
-    top: 100%;
-    translate: 0 -100%;
-    rotate: 180deg;
-  }
-  100% {
-    top: 0;
-    translate: 0;
-    rotate: 360deg;
-  }
-}
-
-@keyframes run2 {
-  0% {
-    left: 0;
-    translate: 0;
-    rotate: 0deg;
-  }
-  50% {
-    left: 100%;
-    translate: -100% 0;
-    rotate: 180deg;
-  }
-  100% {
-    left: 0;
-    translate: 0;
-    rotate: 360deg;
+    animation: breathe 7s infinite;
   }
 }
