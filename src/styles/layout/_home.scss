@@ -11,7 +11,9 @@
       @include sm {
         @include font(15vh, 17vh, 100, 4px);
       }
+      &:hover {
+        opacity: 0;
+      }
     }
-    animation: breathe 7s infinite;
   }
 }

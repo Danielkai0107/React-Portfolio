@@ -34,9 +34,6 @@
       //RWD-sm
       @include sm {
         flex-direction: column;
-      }
-      //RWD-sm
-      @include sm {
         width: 25%;
         height: 100%;
       }
@@ -84,27 +81,6 @@
           align-items: flex-start;
           flex-direction: column;
         }
-        .circle {
-          display: none;
-          //RWD-sm
-          @include sm {
-            display: flex;
-          }
-          @include size(100%, 8vh);
-          @include after('', 8vh, 8vh) {
-            @include absolute-lt(6rem, 2px);
-            opacity: 0.2;
-            background-image: url('../../../public/images/projectIMG/click.png');
-            @extend %bg-contain;
-            animation: round 20s forwards infinite linear;
-          }
-          span {
-            align-self: center;
-            @include font(2.5vh, 8vh, 100, 2px);
-            color: #333;
-            opacity: 0.5;
-          }
-        }
         .github {
           @extend %flex-horizontal;
           transition: all 0.4s;
@@ -124,6 +100,33 @@
           span {
             @include size(1.5rem, 1.5rem);
             background-image: url('../../../public/images/projectIMG/github-logo.png');
+            @extend %bg-contain;
+            opacity: 0.6;
+            margin-right: 0.5rem;
+          }
+          &:hover {
+            transform: scale(1.2);
+          }
+        }
+        .figma {
+          @extend %flex-horizontal;
+          transition: all 0.4s;
+          //RWD-sm
+          @include sm {
+            margin-top: 2.5rem;
+          }
+          p {
+            display: none;
+            //RWD-sm
+            @include sm {
+              display: block;
+            }
+            color: #333;
+            @include font(2vh, 1.5rem, 100, 4px);
+          }
+          span {
+            @include size(1.5rem, 1.5rem);
+            background-image: url('../../../public/images/projectIMG/figma_logo.png');
             @extend %bg-contain;
             opacity: 0.6;
             margin-right: 0.5rem;
@@ -201,6 +204,22 @@
             margin-top: 1vh;
           }
         }
+      }
+    }
+    // no figma
+    &:nth-child(1) {
+      .figma {
+        display: none;
+      }
+    }
+    &:nth-child(2) {
+      .figma {
+        display: none;
+      }
+    }
+    &:nth-child(3) {
+      .figma {
+        display: none;
       }
     }
   }

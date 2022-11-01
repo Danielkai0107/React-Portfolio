@@ -9,9 +9,6 @@ function ProjectItem({ item }) {
           <p>{item.number}</p>
         </li>
         <li className="left__decoration">
-          <figure className="circle">
-            <span>click photo</span>
-          </figure>
           <a
             className="github"
             href={item.github}
@@ -20,6 +17,15 @@ function ProjectItem({ item }) {
           >
             <span></span>
             <p>Github</p>
+          </a>
+          <a
+            className="figma"
+            href={item.figma}
+            target="_blank"
+            rel="noreferrer"
+          >
+            <span></span>
+            <p>Figma</p>
           </a>
         </li>
       </ul>
